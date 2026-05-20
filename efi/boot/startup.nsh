@@ -1,0 +1,15 @@
+echo -on
+goto SPOOFSERIAL
+
+:SPOOFSERIAL
+AMIDEEFIx64.efi /BS Unknown
+goto SPOOFUUID
+
+:SPOOFUUID
+AMIDEEFIx64.efi /SU AUTO
+goto EXIT
+
+:EXIT
+exit
+
+:END
